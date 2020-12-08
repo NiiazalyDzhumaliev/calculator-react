@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types';
 
-function Display({ calcResult }) {
-  return (
-    <div>
-      {calcResult || '0'}
-    </div>
-  );
-}
+const Display = ({ calcResult }) => (
+  <div>
+    {calcResult }
+  </div>
+);
+
+Display.defaultProps = {
+  calcResult: '0',
+};
 
 Display.propTypes = {
-  calcResult: PropTypes.string.isRequired,
+  calcResult: PropTypes.string,
 };
 
 export default Display;
