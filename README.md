@@ -1,3 +1,3 @@
 # Calculator APP
 
-[Live Demo (main page)](https://calculator-react-diamondas.herokuapp.com/)
+[Live Demo](https://calculator-react-diamondas.herokuapp.com/)
