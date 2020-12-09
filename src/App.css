@@ -1,3 +1,24 @@
 body {
-  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  background-color: #f23565;
+}
+
+.button {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 20px;
+  outline: none;
+  background-color: #e8d5da;
+}
+
+.calc-result {
+  font-size: 20px;
+  color: white;
 }
