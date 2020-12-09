@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Display = ({ calcResult }) => (
-  <div>
+  <div className="calc-result">
     {calcResult }
   </div>
 );

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Button = ({ name }) => (
-  <button type="button">
+  <button type="button" className="button">
     {name}
   </button>
 );
