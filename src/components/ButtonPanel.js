@@ -1,5 +1,7 @@
 import Button from './Button';
 
+const { v4: UuidV4 } = require('uuid');
+
 const buttonGroups = {
   groupOne: {
     id: 1,
@@ -31,31 +33,31 @@ const ButtonPanel = () => (
   <>
     <div className="groupOne">
       {buttonGroups.groupOne.group.map(button => (
-        <Button name={button} key={buttonGroups.groupOne.id} />
+        <Button name={button} key={UuidV4()} />
       ))}
     </div>
 
     <div className="groupTwo">
       {buttonGroups.groupTwo.group.map(button => (
-        <Button name={button} key={buttonGroups.groupTwo.id} />
+        <Button name={button} key={UuidV4()} />
       ))}
     </div>
 
     <div className="groupThree">
       {buttonGroups.groupThree.group.map(button => (
-        <Button name={button} key={buttonGroups.groupThree.id} />
+        <Button name={button} key={UuidV4()} />
       ))}
     </div>
 
     <div className="groupFour">
       {buttonGroups.groupFour.group.map(button => (
-        <Button name={button} key={buttonGroups.groupFour.id} />
+        <Button name={button} key={UuidV4()} />
       ))}
     </div>
 
     <div className="groupFive">
       {buttonGroups.groupFive.group.map(button => (
-        <Button name={button} key={buttonGroups.groupFive.id} />
+        <Button name={button} key={UuidV4()} />
       ))}
     </div>
   </>
