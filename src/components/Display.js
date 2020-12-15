@@ -1,10 +1,14 @@
 import PropTypes from 'prop-types';
 
-const Display = ({ calcResult }) => (
-  <div className="calc-result">
-    {calcResult }
-  </div>
-);
+const Display = props => {
+  const { calcResult } = props;
+
+  return (
+    <div className="calc-result">
+      {calcResult}
+    </div>
+  );
+};
 
 Display.defaultProps = {
   calcResult: '0',
