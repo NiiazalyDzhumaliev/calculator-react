@@ -6,7 +6,7 @@ const { v4: UuidV4 } = require('uuid');
 const buttonGroups = {
   groupOne: {
     id: 1,
-    group: ['AC', '+/-', '%', '÷'],
+    group: ['AC', '+/-', '%', '/'],
   },
 
   groupTwo: {

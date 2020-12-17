@@ -7,13 +7,17 @@ const operate = (numberOne, numberTwo, operation) => {
 
   if (operation === '+') {
     result = x.plus(y);
-  } else if (operation === '-') {
+  }
+  if (operation === '-') {
     result = x.minus(y);
-  } else if (operation === 'X') {
+  }
+  if (operation === 'X') {
     result = x.times(y);
-  } else if (operation === '÷') {
+  }
+  if (operation === '/') {
     result = x.div(y);
-  } else if (operation === '%') {
+  }
+  if (operation === '%') {
     result = x.div(100);
   }
   return result.toString();
