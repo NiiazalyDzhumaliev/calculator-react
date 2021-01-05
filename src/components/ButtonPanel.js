@@ -1,3 +1,4 @@
+import propTypes from 'prop-types';
 import Button from './Button';
 
 const { v4: UuidV4 } = require('uuid');
@@ -5,7 +6,7 @@ const { v4: UuidV4 } = require('uuid');
 const buttonGroups = {
   groupOne: {
     id: 1,
-    group: ['AC', '+/-', '%', '÷'],
+    group: ['AC', '+/-', '%', '/'],
   },
 
   groupTwo: {
@@ -29,38 +30,45 @@ const buttonGroups = {
   },
 };
 
-const ButtonPanel = () => (
-  <>
-    <div className="groupOne">
-      {buttonGroups.groupOne.group.map(button => (
-        <Button name={button} key={UuidV4()} />
-      ))}
-    </div>
+const ButtonPanel = props => {
+  const handleClick = buttonName => props.clickHandler(buttonName);
+  return (
+    <>
+      <div className="groupOne">
+        {buttonGroups.groupOne.group.map(button => (
+          <Button name={button} key={UuidV4()} clickHandler={handleClick} />
+        ))}
+      </div>
 
-    <div className="groupTwo">
-      {buttonGroups.groupTwo.group.map(button => (
-        <Button name={button} key={UuidV4()} />
-      ))}
-    </div>
+      <div className="groupTwo">
+        {buttonGroups.groupTwo.group.map(button => (
+          <Button name={button} key={UuidV4()} clickHandler={handleClick} />
+        ))}
+      </div>
 
-    <div className="groupThree">
-      {buttonGroups.groupThree.group.map(button => (
-        <Button name={button} key={UuidV4()} />
-      ))}
-    </div>
+      <div className="groupThree">
+        {buttonGroups.groupThree.group.map(button => (
+          <Button name={button} key={UuidV4()} clickHandler={handleClick} />
+        ))}
+      </div>
 
-    <div className="groupFour">
-      {buttonGroups.groupFour.group.map(button => (
-        <Button name={button} key={UuidV4()} />
-      ))}
-    </div>
+      <div className="groupFour">
+        {buttonGroups.groupFour.group.map(button => (
+          <Button name={button} key={UuidV4()} clickHandler={handleClick} />
+        ))}
+      </div>
 
-    <div className="groupFive">
-      {buttonGroups.groupFive.group.map(button => (
-        <Button name={button} key={UuidV4()} />
-      ))}
-    </div>
-  </>
-);
+      <div className="groupFive">
+        {buttonGroups.groupFive.group.map(button => (
+          <Button name={button} key={UuidV4()} clickHandler={handleClick} />
+        ))}
+      </div>
+    </>
+  );
+};
+
+ButtonPanel.propTypes = {
+  clickHandler: propTypes.func.isRequired,
+};
 
 export default ButtonPanel;
