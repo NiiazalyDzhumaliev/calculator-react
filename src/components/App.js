@@ -26,9 +26,11 @@ const App = () => {
   }
 
   return (
-    <div>
-      <Display calcResult={result || undefined} />
-      <ButtonPanel clickHandler={handleClick} />
+    <div className="app">
+      <div className="calculator">
+        <Display calcResult={result || undefined} />
+        <ButtonPanel clickHandler={handleClick} />
+      </div>
     </div>
   );
 };
