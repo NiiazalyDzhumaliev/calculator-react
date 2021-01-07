@@ -8,15 +8,12 @@
 }
 
 .button {
-  width: 70px;
-  height: 70px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  border-radius: 50%;
-  border: 0;
-  font-size: 20px;
+  width: 25%;
+  height: 100%;
+  border: 1.5px solid #d1d1de;
+  font-size: 25px;
   outline: none;
-  background-color: #e8d5da;
+  background-color: #e0e0e0;
 }
 
 .calc-result {
@@ -24,7 +21,7 @@
   justify-content: flex-end;
   align-items: center;
   height: 100px;
-  background-color: #aaa7cf;
+  background-color: #858694;
   color: white;
   font-size: 40px;
   font-weight: bold;
@@ -34,4 +31,8 @@
   margin: 0;
   margin-right: 10px;
   padding: 0;
+}
+
+.button-group {
+  height: 100px;
 }

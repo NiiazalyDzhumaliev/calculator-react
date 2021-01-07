@@ -34,31 +34,31 @@ const ButtonPanel = props => {
   const handleClick = buttonName => props.clickHandler(buttonName);
   return (
     <>
-      <div className="groupOne">
+      <div className="groupOne button-group">
         {buttonGroups.groupOne.group.map(button => (
           <Button name={button} key={UuidV4()} clickHandler={handleClick} />
         ))}
       </div>
 
-      <div className="groupTwo">
+      <div className="groupTwo button-group">
         {buttonGroups.groupTwo.group.map(button => (
           <Button name={button} key={UuidV4()} clickHandler={handleClick} />
         ))}
       </div>
 
-      <div className="groupThree">
+      <div className="groupThree button-group">
         {buttonGroups.groupThree.group.map(button => (
           <Button name={button} key={UuidV4()} clickHandler={handleClick} />
         ))}
       </div>
 
-      <div className="groupFour">
+      <div className="groupFour button-group">
         {buttonGroups.groupFour.group.map(button => (
           <Button name={button} key={UuidV4()} clickHandler={handleClick} />
         ))}
       </div>
 
-      <div className="groupFive">
+      <div className="groupFive button-group">
         {buttonGroups.groupFive.group.map(button => (
           <Button name={button} key={UuidV4()} clickHandler={handleClick} />
         ))}
