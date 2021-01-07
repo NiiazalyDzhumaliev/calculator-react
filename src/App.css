@@ -1,9 +1,10 @@
-body {
+.app {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 90px;
-  background-color: #f23565;
+}
+
+.calculator {
+  width: 700px;
 }
 
 .button {
@@ -19,6 +20,18 @@ body {
 }
 
 .calc-result {
-  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+  background-color: #aaa7cf;
   color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.result-display {
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
 }
