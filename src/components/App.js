@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
+import {
+  BrowserRouter, Route, Switch, Link,
+} from 'react-router-dom';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
+import Home from './Home';
+import Quote from './Quote';
 import '../App.css';
 import calculate from '../logic/calculate';
 
@@ -26,12 +31,40 @@ const App = () => {
   }
 
   return (
-    <div className="app">
-      <div className="calculator">
-        <Display calcResult={result || undefined} />
-        <ButtonPanel clickHandler={handleClick} />
+    <BrowserRouter>
+      <div className="navbar">
+        <h1>Math Magicians</h1>
+        <nav>
+          <ul className="navigation">
+            <li className="nav-item">
+              <Link to="/calculator">Calculator</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/home">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/quote">Quote</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
+      <div className="app">
+        <Switch>
+          <Route path="/calculator">
+            <div className="calculator">
+              <Display calcResult={result || undefined} />
+              <ButtonPanel clickHandler={handleClick} />
+            </div>
+          </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/quote">
+            <Quote />
+          </Route>
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 };
 
