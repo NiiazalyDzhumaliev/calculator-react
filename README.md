@@ -1,18 +1,20 @@
 # Calculator App
+
 A calculator app using React
 
 > This is an assigment for Microverse React course. The goal is to create a calculator app using React.
 
+![screenshot](public/calculator.png)
 
 Additional description about the project and its features.
 
 ## Built With
+
 - React,
 - CSS,
 - JavaScript,
 - npm,
 - webpack
-
 
 ## Live Demo
 
@@ -24,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- A compatible browser with HTML, CSS and JavaScript. 
+- A compatible browser with HTML, CSS and JavaScript.
 
 ### Install
 
@@ -35,7 +37,6 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 
 - You can use it as classic calculator
-
 
 ## Author
 
@@ -62,8 +63,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is free to use as learning purposes. For any external content (e.g. logo, images, ...), please contact the proper author and check their license of use.
-
-
-
-
-
